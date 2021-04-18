@@ -3,9 +3,7 @@ import sys
 open_file = str(sys.argv[1])
 print("reading file "+open_file)
 
-with open(open_file,"r") as results:
-	lines = results.readlines()
-
+with open(open_file,"r") as lines:
 	result_num = 0
 	result_num_array = []
 	title = []
