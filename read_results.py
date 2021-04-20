@@ -86,7 +86,7 @@ for row in range(0,len(rows[:])):
 
 file = str(open_file.split(".txt")[0])+'_cleaned_results.csv'
 
-with open(file,'w') as csv_file:
+with open(file,'w',encoding="utf8") as csv_file:
 	csv_writer = csv.writer(csv_file)
 	csv_writer.writerow(fields)
 	csv_writer.writerows(clean_rows)
